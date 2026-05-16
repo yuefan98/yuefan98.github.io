@@ -5,3 +5,7 @@ Thumbs.db
 .vscode/
 .idea/
 node_modules/
+.playwright-cli/
+output/
+DESIGN.md
+script 2.js
