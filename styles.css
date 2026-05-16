@@ -327,13 +327,13 @@ p {
 
 .feature-band {
   min-height: 76vh;
-  color: #ffffff;
-  background: var(--tile-dark);
+  color: var(--ink);
+  background: var(--canvas);
 }
 
 .feature-band .section-kicker,
 .feature-band .feature-index {
-  color: var(--primary-on-dark);
+  color: var(--primary);
 }
 
 .feature-band h2 {
@@ -348,10 +348,10 @@ p {
 }
 
 .feature-grid article {
-  border: 1px solid rgba(255, 255, 255, 0.16);
+  border: 1px solid var(--hairline);
   border-radius: var(--radius-lg);
   padding: 24px;
-  background: rgba(255, 255, 255, 0.035);
+  background: var(--pearl);
 }
 
 .feature-index {
@@ -364,7 +364,7 @@ p {
 }
 
 .feature-grid p {
-  color: var(--muted-dark);
+  color: var(--muted);
   font-size: 17px;
   line-height: 1.47;
 }
@@ -483,12 +483,12 @@ p {
 }
 
 .timeline-section {
-  color: #ffffff;
-  background: var(--tile-dark-2);
+  color: var(--ink);
+  background: var(--parchment);
 }
 
 .timeline-section .eyebrow {
-  color: var(--primary-on-dark);
+  color: var(--primary);
 }
 
 .timeline-section h2 {
@@ -500,22 +500,22 @@ p {
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 1px;
   margin-top: 48px;
-  border: 1px solid rgba(255, 255, 255, 0.14);
+  border: 1px solid var(--hairline);
   border-radius: var(--radius-lg);
   overflow: hidden;
-  background: rgba(255, 255, 255, 0.14);
+  background: var(--hairline);
 }
 
 .timeline article {
   min-height: 264px;
   padding: 24px;
-  background: var(--tile-dark);
+  background: var(--canvas);
 }
 
 .timeline span {
   display: block;
   margin-bottom: 28px;
-  color: var(--primary-on-dark);
+  color: var(--primary);
   font-size: 14px;
   font-weight: 400;
   line-height: 1.43;
@@ -523,7 +523,7 @@ p {
 }
 
 .timeline p {
-  color: var(--muted-dark);
+  color: var(--muted);
 }
 
 .publications-section {
