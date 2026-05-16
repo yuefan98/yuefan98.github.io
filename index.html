@@ -34,6 +34,7 @@
     <main id="top">
       <section class="hero" aria-labelledby="hero-title">
         <div class="hero-copy">
+          <img class="profile-photo" src="assets/profile.jpg" alt="Portrait of Yuefan Ji" width="220" height="220">
           <p class="eyebrow">Battery diagnostics / Modeling / Scientific software</p>
           <h1 id="hero-title">Yuefan Ji</h1>
           <p class="hero-lede">
@@ -59,6 +60,33 @@
             <span>Output</span>
             <strong>Peer-reviewed methods, public code, documentation, and datasets</strong>
           </div>
+        </div>
+      </section>
+
+      <section class="section timeline-section" id="experience" aria-labelledby="experience-title">
+        <p class="eyebrow">Experience</p>
+        <h2 id="experience-title">A path from materials chemistry to battery diagnostics software.</h2>
+        <div class="timeline">
+          <article>
+            <span>Current</span>
+            <h3>Meta</h3>
+            <p>Redmond, Washington.</p>
+          </article>
+          <article>
+            <span>2021 - 2025</span>
+            <h3>Ph.D., Chemical Engineering</h3>
+            <p>University of Washington, focused on practical second-harmonic nonlinear electrochemical impedance spectroscopy for lithium-ion batteries.</p>
+          </article>
+          <article>
+            <span>2020 - 2021</span>
+            <h3>M.S., Materials Science</h3>
+            <p>UC Santa Barbara, with research on methane-pyrolysis carbon byproducts for Li-ion and Na-ion battery applications.</p>
+          </article>
+          <article>
+            <span>2016 - 2020</span>
+            <h3>B.S., Chemical Engineering</h3>
+            <p>UC Santa Barbara. Background also includes mathematics training noted in public profile information.</p>
+          </article>
         </div>
       </section>
 
@@ -96,21 +124,26 @@
       <section class="section split-section" id="software" aria-labelledby="software-title">
         <div>
           <p class="eyebrow">Open Source</p>
+          <img class="software-logo" src="assets/logo.svg" alt="nleis.py logo" width="360" height="157">
           <h2 id="software-title">nleis.py provides a documented workflow for nonlinear impedance analysis.</h2>
         </div>
         <div class="software-card documentation-card">
-          <p>
-            nleis.py is documented as an impedance.py toolbox for paired linear and nonlinear
-            circuit elements, simultaneous EIS and 2nd-NLEIS analysis, data truncation, fitting,
-            visualization, and measurement-model validation.
-          </p>
-          <ol class="workflow-list" aria-label="Documented nleis.py workflow">
-            <li>Set up the environment and install nleis.py from PyPI.</li>
-            <li>Import frequency, Z1, and Z2 data from the experiment.</li>
-            <li>Process the data with the documented nleis.py data-processing workflow.</li>
-            <li>Define paired EIS and NLEIS circuit models using supported element pairs.</li>
-            <li>Fit, visualize, and inspect results through the package APIs.</li>
-          </ol>
+          <div class="software-card-body">
+            <div class="software-copy">
+              <p>
+                nleis.py is documented as an impedance.py toolbox for paired linear and nonlinear
+                circuit elements, simultaneous EIS and 2nd-NLEIS analysis, data truncation, fitting,
+                visualization, and measurement-model validation.
+              </p>
+              <ol class="workflow-list" aria-label="Documented nleis.py workflow">
+                <li>Set up the environment and install nleis.py from PyPI.</li>
+                <li>Import frequency, Z1, and Z2 data from the experiment.</li>
+                <li>Process the data with the documented nleis.py data-processing workflow.</li>
+                <li>Define paired EIS and NLEIS circuit models using supported element pairs.</li>
+                <li>Fit, visualize, and inspect results through the package APIs.</li>
+              </ol>
+            </div>
+          </div>
           <div class="inline-actions">
             <a href="https://github.com/yuefan98/nleis.py" target="_blank" rel="noreferrer">Repository</a>
             <a href="https://nleispy.readthedocs.io/en/latest/getting-started.html" target="_blank" rel="noreferrer">Getting started</a>
@@ -119,33 +152,19 @@
             <a href="https://joss.theoj.org/papers/10.21105/joss.07424" target="_blank" rel="noreferrer">JOSS paper</a>
           </div>
         </div>
-      </section>
-
-      <section class="section timeline-section" aria-labelledby="experience-title">
-        <p class="eyebrow">Experience</p>
-        <h2 id="experience-title">A path from materials chemistry to battery diagnostics software.</h2>
-        <div class="timeline">
-          <article>
-            <span>Current</span>
-            <h3>Meta</h3>
-            <p>Redmond, Washington. Public LinkedIn profile lists Meta as current experience.</p>
-          </article>
-          <article>
-            <span>2021 - 2025</span>
-            <h3>Ph.D., Chemical Engineering</h3>
-            <p>University of Washington, focused on practical second-harmonic nonlinear electrochemical impedance spectroscopy for lithium-ion batteries.</p>
-          </article>
-          <article>
-            <span>2020 - 2021</span>
-            <h3>M.S., Materials Science</h3>
-            <p>UC Santa Barbara, with research on methane-pyrolysis carbon byproducts for Li-ion and Na-ion battery applications.</p>
-          </article>
-          <article>
-            <span>2016 - 2020</span>
-            <h3>B.S., Chemical Engineering</h3>
-            <p>UC Santa Barbara. Background also includes mathematics training noted in public profile information.</p>
-          </article>
-        </div>
+        <figure class="software-demo">
+          <figcaption>Second-harmonic NLEIS concept</figcaption>
+          <video
+            src="assets/second_harmonic_nleis.mp4"
+            poster="assets/second_harmonic_nleis_preview.jpg"
+            preload="metadata"
+            autoplay
+            muted
+            loop
+            playsinline
+            aria-label="Animation illustrating second-harmonic nonlinear electrochemical impedance spectroscopy"
+          ></video>
+        </figure>
       </section>
 
       <section class="section publications-section" id="publications" aria-labelledby="publications-title">
@@ -295,14 +314,6 @@
           <a href="https://nleispy.readthedocs.io/en/latest/" target="_blank" rel="noreferrer">
             <span>Docs</span>
             <strong>nleis.py documentation</strong>
-          </a>
-          <a href="https://impedancepy.readthedocs.io/" target="_blank" rel="noreferrer">
-            <span>Docs</span>
-            <strong>impedance.py documentation</strong>
-          </a>
-          <a href="https://github.com/ECSHackWeek/impedance.py" target="_blank" rel="noreferrer">
-            <span>GitHub</span>
-            <strong>impedance.py repository</strong>
           </a>
           <a href="https://pypi.org/project/nleis/" target="_blank" rel="noreferrer">
             <span>PyPI</span>
